@@ -5,12 +5,12 @@ int main()
     char string2[6] = "world";
     char string3[10];
 
-    printf("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä: ");
-    scanf("%s", &string3);
+    printf("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”: ");
+    scanf("%s", string3);
 
     printf("%s\n", string1);
     printf("%s\n", string2);
-    printf("%s %s %s´Ô ¾È³çÇÏ¼¼¿ä \n", string1, string2, string3);
+    printf("%s %s %sì•ˆë…•í•˜ì„¸ìš” \n", string1, string2, string3);
 
     return 0;
 }

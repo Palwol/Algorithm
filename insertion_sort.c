@@ -3,6 +3,10 @@ int main()
 {
     int key;
     int insert[10]={6,8,2,9,5,10,3,5,1,7};
+    for(int i=0; i<10; i++){
+        printf("%d ", insert[i]);
+    }
+
 
     for(int i=1; i<10; i++){
         key = insert[i];
@@ -18,7 +22,7 @@ int main()
         }
     }
 
-    printf("Á¤·Ä ¹è¿­: ");
+    printf("\nì •ë ¬: ");
     for(int i=0; i<10; i++){
         printf("%d ", insert[i]);
     }
