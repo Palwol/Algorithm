@@ -21,7 +21,6 @@ void merge(int list[], int left, int mid, int right){
     for(l=j; l<=right; l++)
       sorted[k++] = list[l];
   }
-  // 남아 있는 값들을 일괄 복사
   else{
     for(l=i; l<=mid; l++)
       sorted[k++] = list[l];
