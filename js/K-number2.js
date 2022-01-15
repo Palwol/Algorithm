@@ -1,9 +1,8 @@
 function solution(array, commands) {
     const answer = [];
-    for(let i=0; i<commands.length; i++){
-        const sort_array = array.slice(commands[i][0]-1,commands[i][1]);
-        sort_array.sort((a,b) => {return a-b});
-        answer[i] = sort_array[commands[i][2]-1];
+    for(let command of commands){
+        const sort_array = array.slice(command[0]-1,command[1]).sort((a,b) => a-b);
+        answer.push(sort_array[command[2]-1]);
     }
     return answer;
 }
