@@ -1,8 +1,5 @@
 function solution(progresses, speeds) {
-    const time = [];
-    for(let i=0; i<progresses.length; i++){
-        time[i] = Math.ceil((100-progresses[i])/speeds[i]);
-    }
+    const time = progresses.map((progress,i)=>{Math.ceil((100-progress)/speeds[i])});
 
     let temp = time[0]
     const answer = [];
@@ -14,8 +11,7 @@ function solution(progresses, speeds) {
         }
         else{
             temp = time[i];
-            j++;
-            answer[j] = 1;
+            answer[++j] = 1;
         }
     }
     return answer;
