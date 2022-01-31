@@ -1,10 +1,9 @@
 function solution(progresses, speeds) {
-    const time = progresses.map((progress,i)=>{Math.ceil((100-progress)/speeds[i])});
+    let time = progresses.map((progress,i)=>Math.ceil((100-progress)/speeds[i]));
 
     let temp = time[0]
-    const answer = [];
+    const answer = [1];
     let j = 0;  //answer의 인덱스
-    answer[j] = 1;
     for(let i=1; i<time.length; i++){
         if(time[i]<=temp){
             answer[j]++;
