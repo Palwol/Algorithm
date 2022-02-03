@@ -1,7 +1,7 @@
 function solution(progresses, speeds) {
-    let time = progresses.map((progress,i)=>Math.ceil((100-progress)/speeds[i]));
+    const time = progresses.map((progress,i)=>Math.ceil((100-progress)/speeds[i]));
 
-    let temp = time[0]
+    let temp = time[0];
     const answer = [1];
     let j = 0;  //answer의 인덱스
     for(let i=1; i<time.length; i++){

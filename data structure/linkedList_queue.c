@@ -55,7 +55,7 @@ int Dequeue(Queue *queue){
 int main(void){
     int i;
     Queue queue;
-
+    
     InitQueue(&queue);
 
     for(i=1; i<=5; i++){
