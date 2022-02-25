@@ -1,3 +1,4 @@
+//K번째수
 function solution(array, commands) {
     const answer = [];
     for (const command of commands){

@@ -1,3 +1,4 @@
+//기능개발
 function solution(progresses, speeds) {
     const time = progresses.map((progress,i)=>Math.ceil((100-progress)/speeds[i]));
 

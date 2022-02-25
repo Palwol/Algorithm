@@ -1,3 +1,4 @@
+//프린터
 function solution(priorities, location) {
     let index = priorities.map((priority,i) => [priority,i]);
     let answer = 0;

@@ -1,3 +1,4 @@
+//다리를 지나는 트럭
 function solution(bridge_length, weight, truck_weights) {
     let answer = 0, sum = 0, wait = 0;
     const bridge = [];
