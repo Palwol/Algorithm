@@ -11,7 +11,7 @@ function solution(n, times) {
         count = times.reduce((sum,curr) => sum + parseInt(mid/curr),0);
         if(n<=count){
             right = mid-1;
-            answer = Math.min(mid,answer);
+            answer = mid;
         }
         else if(n>count){
             left = mid+1;
