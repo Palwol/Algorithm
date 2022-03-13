@@ -16,7 +16,7 @@ function solution(participant, completion) {
 
 //Hash 이용
 function HashSolution(participant, completion){
-    let hash = {};
+    const hash = {};
     for(let val of completion){
         if(!hash.hasOwnProperty(val)){
             hash[val] = 1;
@@ -27,7 +27,7 @@ function HashSolution(participant, completion){
     }
 
     for(const val of participant){
-        if(!hash.hasOwnProperty(val)){
+        if(!hash[val]){
             return val;
         }
         else{
