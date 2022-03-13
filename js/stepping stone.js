@@ -26,10 +26,10 @@ function solution(distance, rocks, n) {
         }
 
         if(remove > n) {
-            r = m;
+            r = m-1;
         }
         else if(remove < n) {
-            l = m;
+            l = m+1;
         }
         else {
             break;
