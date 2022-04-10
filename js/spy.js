@@ -2,11 +2,10 @@
 
 function solution(clothes) {
     const hash = {};
-    for(let val of clothes){
-        if(!hash[val[1]]){
+    for(let val of clothes) {
+        if(!hash[val[1]]) {
             hash[val[1]] = 2;
-        }
-        else{
+        } else {
             hash[val[1]]++;
         }
     }
