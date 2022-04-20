@@ -22,7 +22,6 @@ function solution(genres, plays) {
             }
         }
     }
-
     return answer;
 }
 
