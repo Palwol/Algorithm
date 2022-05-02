@@ -8,8 +8,8 @@ function solution(lottos, win_nums) {
             winning++;
         }
     }
-    answer[0] = (winning + zeroNum) < 2 ? 6 : 7 - (winning+zeroNum);
-    answer[1] = winning < 2 ? 6 : 7-winning;
+    answer[0] = (winning + zeroNum) < 2 ? 6 : 7 - (winning + zeroNum);
+    answer[1] = winning < 2 ? 6 : 7 - winning;
     return answer;
 }
-console.log(solution([44, 1, 0, 0, 31, 25],[31, 10, 45, 1, 6, 19]));
+console.log(solution([44, 1, 0, 0, 31, 25], [31, 10, 45, 1, 6, 19]));
