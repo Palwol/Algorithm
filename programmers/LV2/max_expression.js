@@ -1,3 +1,4 @@
+//수식 최대화
 function solution(expression) {
   const calcArr = ["*", "+", "-"];
   const clacOrder = [

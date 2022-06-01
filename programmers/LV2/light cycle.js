@@ -1,3 +1,4 @@
+//빛의 경로 사이클
 function solution(grid) {
   const result = [];
 
