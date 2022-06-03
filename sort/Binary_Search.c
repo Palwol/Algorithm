@@ -7,8 +7,8 @@ int main(void)
 
     int arr[10] = {1, 3, 5, 7, 9, 11, 13, 15, 17, 21};
 
-    int left = arr[0];
-    int right = arr[sizeof(arr) / sizeof(int) - 1];
+    int left = 0;
+    int right = sizeof(arr) / sizeof(int) - 1;
     int mid = (left + right) / 2;
 
     while (left < right)
@@ -25,11 +25,10 @@ int main(void)
         }
         else
         {
-            result = mid + 1;
+            result = mid;
             break;
         }
     }
 
-    printf("%d\n", result);
-    return 0;
+    return arr[result];
 }
