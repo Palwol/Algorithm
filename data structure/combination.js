@@ -12,3 +12,4 @@ function combination(arr, pickNum) {
   });
   return result;
 }
+console.log(combination([1, 2, 3, 4], 2));
